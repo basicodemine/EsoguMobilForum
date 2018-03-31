@@ -9,10 +9,14 @@
 * Üye olma
 * Email ile şifre sıfırlama
 * Etkinliklerden anında bilgi sahibi olma (Firebase Push Notification)
-
+* Üye olurken profil resmi yükleme
+* Resimli veya resimsiz konu açabilme
+* Ftp servisleri
+* Tartışma konusu yaratabilme ve cevaplayabilme
+* Etkinlikler forum olarak açılır ve cevap yazılabilir
 
 Programı destek sağlanamadığı için açık kaynak olarak paylaşmaya karar verdim. Malesef webservisleri elimde bulunmuyor.
-İlgili JSON düzenine ait olan herhangi bir web servis ile tekrar ayağa kaldırabilirsiniz.
+İlgili JSON düzenine ait olan her hangi bir web servis ile tekrar ayağa kaldırabilirsiniz.
 
 
 
