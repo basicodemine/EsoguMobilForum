@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingBottom="5dp"
+    android:background="#ffffff"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:weightSum="16"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="3"
+        android:weightSum="8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/rowfotokim"
+            android:layout_gravity="center"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@android:drawable/sym_def_app_icon"
+            app:civ_border_width="1dp"
+            app:civ_border_color="#aa000000"/>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:weightSum="5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="7">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:paddingTop="5dp"
+                        android:textColor="#3F51B5"
+                        android:text="Egemen Özogul"
+                        android:gravity="end"
+                        android:id="@+id/rowname"
+                        android:layout_above="@+id/linearLayout2"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:paddingTop="5dp"
+                        android:textColor="#7f7f7f"
+                        android:layout_gravity="center_vertical"
+                        android:text=" paylaştı..."
+                        android:gravity="end"
+                        android:layout_above="@+id/linearLayout2"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="13dp"
+                    android:textSize="10dp"
+                    android:text="15.12.2011"
+                    android:drawableLeft="@drawable/sayac"
+                    android:textColor="#7f7f7f"
+                    android:layout_marginTop="2dp"
+                    android:gravity="end"
+                    android:id="@+id/rowtarih"
+                    android:layout_above="@+id/linearLayout2"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+            </LinearLayout>
+
+        </LinearLayout>
+        <TextView
+            android:id="@+id/yourum"
+            android:text="deneme"
+            android:textSize="15dp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="3dp"
+            android:textColor="#3F51B5"
+            android:layout_marginTop="5dp"
+            android:background="#66dfe3ee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </TextView>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="#dfe3ee"
+            android:padding="3dp"
+            android:id="@+id/yorumfoto"
+            android:scaleType="fitXY"
+            android:layout_gravity="center_horizontal" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="7dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="Başlığa Gözat"
+                android:textColor="#3F51B5"
+                android:paddingLeft="15dp"
+                android:drawableLeft="@drawable/buyutec"
+                android:background="@drawable/buttonxml"
+                android:textAllCaps="false"
+                android:layout_weight="1"
+                android:id="@+id/gozat" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

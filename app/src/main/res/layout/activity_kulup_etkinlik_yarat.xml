@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/etkinlikback"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="twitter.ogu.com.esogumobilforum.kulup_etkinlik_yarat">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:weightSum="15"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/etkinlik_logo"
+                android:id="@+id/imageView6" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#1b9aeb"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="ETKİNLİK OLUŞTUR"
+                android:id="@+id/textView12" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#2269d4"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="   Etkinlik Adı"
+            android:id="@+id/textView13" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:hint="Maksimum 15 Karakter"
+            android:background="@drawable/etkinlik_adi"
+            android:layout_height="100dp"
+            android:id="@+id/etadi" />
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#2269d4"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="   Açıklama"
+            android:id="@+id/textVieasdw13" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:hint="Maksimum 30 Karakter"
+            android:background="@drawable/etkinlikbody"
+            android:layout_height="150dp"
+            android:id="@+id/etac" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:weightSum="2"
+            android:layout_height="30dp"
+            android:layout_gravity="center_horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="New Text"
+                android:id="@+id/dateshow"
+                android:layout_gravity="center_horizontal" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="New Text"
+                android:id="@+id/hourshow"
+                android:layout_gravity="center_horizontal" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:weightSum="2"
+            android:layout_gravity="center_horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAllCaps="false"
+                android:text="Tarihi Ayarla"
+                android:background="@drawable/buttonxml"
+                android:id="@+id/setdate"
+                android:layout_gravity="center_horizontal" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Saati Ayarla"
+                android:textAllCaps="false"
+                android:id="@+id/sethour"
+                android:background="@drawable/buttonxml"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textAllCaps="false"
+            android:background="@drawable/buttonxml"
+            android:layout_height="50dp"
+            android:text="Etkinlik Oluştur!"
+            android:id="@+id/olusturgari"
+            android:layout_gravity="center_horizontal" />
+
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:weightSum="8"
+    android:background="@drawable/row_bacground"
+    android:layout_height="200dp">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_weight="4"
+        android:layout_height="1dp"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="95dp"
+            android:text="150\nkişi"
+            android:textSize="10dp"
+            android:gravity="bottom|center"
+            android:paddingBottom="25dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/registeredusers"
+            android:layout_height="match_parent"
+            android:id="@+id/kisisayisi" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:weightSum="8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="3"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="Karadeniz TURU"
+                android:id="@+id/basliketk"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_weight="5"
+                android:gravity="center"
+                android:textSize="10dp"
+                android:text="İlgilenen arkadaşlar\nNo:0532 882 88 99"
+                android:id="@+id/iceriketk"
+                android:layout_gravity="center_horizontal" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_weight="1">
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/tarih_icon"
+            android:id="@+id/imageView7"
+           />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="8dp"
+            android:layout_height="wrap_content"
+            android:gravity="start|center"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="15-12-2017"
+            android:id="@+id/etktarih" />
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            android:id="@+id/imageView8"
+            android:src="@drawable/saat_icon"
+            android:layout_marginLeft="10dp"
+         />
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="8dp"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:gravity="start|center"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="10:30"
+            android:id="@+id/etksaat" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:weightSum="4"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:textSize="10dp"
+            android:textStyle="italic|bold"
+            android:layout_height="wrap_content"
+            android:gravity="center|end"
+            android:layout_marginRight="3dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Egemen Tarafından Oluşturuldu!"
+            android:id="@+id/etkwho" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:text="Katıl"
+        android:id="@+id/etkkatil"
+        android:textStyle="bold"
+        android:textColor="#488cd2"
+        android:layout_margin="5dp"
+        android:background="@drawable/kayitolbutton"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="2" />
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Esogu Mobil Forum</string>
+    <string name="app_id">1274105652630691</string>
+    <string name="title_activity_ana_menu">AnaMenu</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Çıkış Yap</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_kulup_etkinlik_goster">kulup_etkinlik_goster</string>
+    <string name="title_activity_kulup_etkinlik_yarat">kulup_etkinlik_yarat</string>
+    <string name="title_activity_iee_forum">iee_forum</string>
+
+</resources>

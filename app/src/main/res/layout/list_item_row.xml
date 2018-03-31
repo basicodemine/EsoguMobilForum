@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:background="@drawable/rowback1"
+    android:layout_height="110dp"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/yorumfoto"
+        android:layout_gravity="center"
+        android:layout_width="100dp"
+        android:padding="7dp"
+        android:layout_height="100dp"
+        android:src="@android:drawable/sym_def_app_icon"
+        app:civ_border_width="1dp"
+        app:civ_border_color="#aa000000"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="50dp"
+        android:textSize="13dp"
+        android:gravity="center_vertical"
+        android:text="Başlık"
+        android:id="@+id/yourum"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_alignTop="@+id/yorumfoto"
+        android:layout_toRightOf="@+id/yorumfoto"
+        android:layout_toEndOf="@+id/yorumfoto" />
+
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:weightSum="7"
+        android:id="@+id/linearLayout2"
+        android:layout_alignBottom="@+id/yorumfoto"
+        android:layout_toRightOf="@+id/yorumfoto"
+        android:layout_toEndOf="@+id/yorumfoto"
+        android:layout_below="@+id/yourum">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_weight="1"
+            android:src="@drawable/like"
+            android:id="@+id/imageView3" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:layout_weight="1"
+            android:text="0"
+            android:id="@+id/rowlike"
+        />
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_weight="1"
+            android:src="@drawable/bubble"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="0"
+            android:layout_weight="1"
+            android:id="@+id/rowyorum"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:textSize="10dp"
+            android:layout_gravity="center"
+            android:text="15.12.2011"
+            android:gravity="end"
+            android:id="@+id/rowtarih"
+
+            android:layout_above="@+id/linearLayout2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/rowfotokim"
+            android:layout_gravity="center"
+            android:layout_width="50dp"
+            android:layout_weight="1"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="3dp"
+            android:padding="10dp"
+            android:layout_height="50dp"
+            android:src="@android:drawable/sym_def_app_icon"
+            app:civ_border_width="1dp"
+            app:civ_border_color="#aa000000"/>
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

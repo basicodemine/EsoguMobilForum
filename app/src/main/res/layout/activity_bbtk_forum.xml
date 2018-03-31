@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg"
+    android:layout_height="match_parent"
+    tools:context="twitter.ogu.com.esogumobilforum.robotik_forum">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="*** Kulüp Hakkında ***"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/textView6"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:background="@drawable/kh"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="250dp"
+        android:background="@drawable/krkaplan1"
+        android:layout_alignParentTop="true"
+        android:weightSum="3"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout3">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:weightSum="3"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:layout_width="1dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/kulup1"
+                android:layout_height="match_parent"
+                android:id="@+id/imagefb" />
+
+            <RelativeLayout
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:textColor="#ffffff"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="BBTK Kulübü"
+                    android:background="@drawable/kadiklp"
+                    android:gravity="center"
+                    android:id="@+id/textView7"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:weightSum="3"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/asd"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+
+            <ImageButton
+                android:layout_width="1dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/bilgisayar"
+                android:layout_height="match_parent"
+                android:id="@+id/imagekulup" />
+
+            <ImageButton
+                android:layout_width="1dp"
+                android:layout_weight="1"
+                android:padding="10dp"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:src="@drawable/kulup3"
+                android:layout_height="match_parent"
+                android:id="@+id/imagetw" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:weightSum="3"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="1dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:textSize="10dp"
+                android:text="      Takip Et"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#ffffff"
+                android:layout_gravity="bottom|center"
+                android:background="@drawable/takipet"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/takip"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+            <ImageButton
+                android:layout_width="1dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:padding="10dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/kulup2"
+                android:layout_height="match_parent"
+                android:id="@+id/imagefrm" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:weightSum="2"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/textView6"
+        android:layout_centerHorizontal="true">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:background="@drawable/kb"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:id="@+id/imageView4"
+                android:src="@drawable/safkbbtk"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Bilgisayar Mühendisliği 2. Sınıf"
+                android:id="@+id/textView8"
+                android:gravity="center"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/imageView4"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="fb-> /SfkAkinci   "
+                android:textStyle="italic"
+                android:layout_marginBottom="2dp"
+                android:textColor="#3983cd"
+                android:id="@+id/textView9"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:background="@drawable/row"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="10dp"
+                android:background="@drawable/tarihce_cizgi"
+                android:id="@+id/textView10"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:scaleType="fitXY"
+                android:layout_marginTop="5dp"
+                android:id="@+id/imageView5"
+                android:src="@drawable/baslik_tarihce"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="10dp"
+                android:scaleType="fitXY"
+                android:text="Tarihçe"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textSize="10dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/twtewtw"
+                android:src="@drawable/baslik_tarihce"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:scrollbars="horizontal"
+                android:layout_marginTop="10dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="      Kulübümüz 2016-17 döneminde Şafak Akıncı başkanlığında etkinlinklerini sürdürmektedir. Kulübün size katacakları şunlardır; Ücretsiz yazılım ve Donanım dersleri, Kendine ait Linux LABında bağımsız çalışma imkanı, Yazılım ekibinde yer alma imkanı, sosyal etkinlikler ile arkadaş çevrenizi genişletme imkanı..."
+                android:id="@+id/textView11"
+                android:layout_below="@+id/imageView5"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/homepage_icon"
+            android:title="Ana Sayfa" />
+
+    </group>
+    <item android:title="Okulumuzdan">
+        <menu>
+            <item
+                android:id="@+id/nav_haber"
+                android:icon="@drawable/lesson_icon"
+                android:title="Haberler, Duyurular" />
+            <item
+                android:id="@+id/nav_yemek"
+                android:icon="@drawable/news_icon"
+                android:title="Yemekhane Menüsü" />
+
+        </menu>
+    </item>
+    <item android:title="Kulüpler">
+        <menu>
+            <item
+                android:id="@+id/nav_bbtk"
+                android:icon="@drawable/bilgisayar_icon"
+                android:title="BBTK Kulüp Sayfası" />
+            <item
+                android:id="@+id/nav_robotik"
+                android:icon="@drawable/robotik_icon"
+                android:title="Robotik Kulüp Sayfası" />
+            <item
+                android:id="@+id/nav_ieee"
+                android:icon="@drawable/elektronik_icon"
+                android:title="IEEE Kulüp Sayfası" />
+        </menu>
+    </item>
+    <item android:title="Kişisel Ayarlar">
+        <menu>
+            <item
+                android:id="@+id/nav_reset"
+                android:icon="@drawable/change_password_icon"
+                android:title="Şifre Değiştir" />
+        </menu>
+    </item>
+    <item android:title="İstatistikler">
+        <menu>
+            <item
+                android:id="@+id/nav_istatistik"
+                android:icon="@drawable/data_icon"
+                android:title="İstatistikler" />
+        </menu>
+    </item>
+
+</menu>

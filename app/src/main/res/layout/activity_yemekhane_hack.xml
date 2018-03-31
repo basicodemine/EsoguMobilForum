@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:background="#33aaaa"
+        android:layout_height="50dp"
+        android:textSize="15dp"
+        android:text="YEMEKHANE MENÜSÜ"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/logo"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:id="@+id/textView14"
+        android:layout_gravity="center_horizontal" />
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/webView"
+        android:layout_gravity="center" />
+</LinearLayout>

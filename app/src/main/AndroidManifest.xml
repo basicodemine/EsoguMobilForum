@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="twitter.ogu.com.esogumobilforum">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/mobile_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".GirisSecimEkrani">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider"
+            android:exported="true" />
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="913a54e5477f9b5ecaf58e875d36a2fb3b14a88d" />
+
+        <activity
+            android:name=".AnaMenu"
+            android:label="@string/title_activity_ana_menu"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".NormalKayit" />
+        <activity android:name=".SifremiUnuttum" />
+
+        <service android:name=".FirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".FirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".ForumInsert" />
+        <activity android:name=".AnaForumKonuIzle" />
+        <activity android:name=".YemekhaneHack" />
+        <activity android:name=".robotik_forum" />
+        <activity
+            android:name=".kulup_etkinlik_goster"
+            android:label="@string/title_activity_kulup_etkinlik_goster" />
+        <activity
+            android:name=".kulup_etkinlik_yarat"
+            android:label="@string/title_activity_kulup_etkinlik_yarat" />
+        <activity
+            android:name=".iee_forum"
+            android:label="@string/title_activity_iee_forum" />
+        <activity android:name=".bbtk_forum" />
+        <activity android:name=".Haberler" />
+        <activity android:name=".istatistik"></activity>
+    </application>
+
+</manifest>
